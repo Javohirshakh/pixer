@@ -225,7 +225,11 @@ header{
 .hero-info .bg-blue{
   margin-top: 16px;
 }
-
+.hero-yt iframe{
+  width: 458px;
+  height: 258px;
+  border: none;
+}
 .section-text{
   width: 700px;
   margin: 0 auto;
@@ -458,6 +462,7 @@ footer div p{
   margin-top: 16px;
   font-size: 16px;
   line-height: 150%;
+  color: var(--white);
 }
 footer ul{
   list-style: none;
