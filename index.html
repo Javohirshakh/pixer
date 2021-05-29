@@ -8,7 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <title>Pixer</title>
   <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.min.css">
+  <!-- <link rel="stylesheet" href="css/styles.css"> -->
 </head>
 <body>
   <header>
@@ -26,19 +27,19 @@
               <a href="#">Xizmatlar</a>
               <ul class="submenu">
                 <li>
-                  <a href="#">Vebsayt</a>
+                  <a href="website.html">Vebsayt</a>
                 </li>
                 <li>
-                  <a href="#">Telegram bot</a>
+                  <a href="telegrambot.html">Telegram bot</a>
                 </li>
                 <li>
-                  <a href="#">SMM</a>
+                  <a href="smm.html">SMM</a>
                 </li>
                 <li>
-                  <a href="#">Grafik dizayn</a>
+                  <a href="design.html">Grafik dizayn</a>
                 </li>
                 <li>
-                  <a href="#">CRM tizimi</a>
+                  <a href="crm.html">CRM tizimi</a>
                 </li>
               </ul>
             </li>
@@ -92,39 +93,39 @@
       <div class="container">
         <div class="section-text">
           <h2>Xizmatlar</h2>
-          <p>Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
+          <p class="service-txt">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
         </div>
         <ul class="services-list">
           <li class="services-item">
-            <a href="#">
+            <a href="website.html">
               <img src="images/website-illustration.png" alt="Illustration picture web sites" width="210" height="110">
               <h3>Vebsayt tuzish</h3>
               <p>lorem ipsum</p>
             </a>
           </li>
           <li class="services-item">
-            <a href="#">
+            <a href="telegrambot.html">
               <img src="images/bot-illustration.png" alt="Illustration picture bot" width="210" height="110">
               <h3>Telegram bot</h3>
               <p>lorem ipsum</p>
             </a>
           </li>
           <li class="services-item">
-            <a href="#">
+            <a href="smm.html">
               <img src="images/smm-illustration.png" alt="Illustration picture for smm" width="210" height="110">
               <h3>SMM</h3>
               <p>lorem ipsum</p>
             </a>
           </li>
           <li class="services-item">
-            <a href="#">
+            <a href="design.html">
               <img src="images/design-illustration.png" alt="Illustration picture for graphic design" width="210" height="110">
               <h3>Grafik dizayn</h3>
               <p>lorem ipsum</p>
             </a>
           </li>
           <li class="services-item">
-            <a href="#">
+            <a href="crm">
               <img src="images/crm-illustration.png" alt="Illustration picture web sites" width="210" height="110">
               <h3>CRM tizimlar</h3>
               <p>lorem ipsum</p>
@@ -132,7 +133,7 @@
           </li>
         </ul>
         <div class="links">
-          <a class="bg-blue" href="#">Buyurtma berish</a>
+          <a class="bg-blue" href="#order">Buyurtma berish</a>
           <a href="#">Xizmatlar sahifasiga o'tish</a>
         </div>
       </div>
@@ -184,7 +185,7 @@
     </section>
 
     
-    <section class="order">
+    <section class="order" id="order">
       <div class="container">
         <div class="section-text">
           <h2>Buyurtma berish</h2>
@@ -194,8 +195,8 @@
         <form class="order-form" action="https://echo.htmlacademy.ru" method="GET">
           <input type="text" name="name" placeholder="Ismingiz" required>
           <input type="tel" name="phonenumber" placeholder="Telefon raqamingiz" required>
-          <select required name="service-type">
-            <option value="Telegrambot" disabled selected>Xizmat turi</option>
+          <select name="service-type" required>
+            <option selected disabled>Xizmat turi</option>
             <option value="Telegrambot">Telegram bot</option>
             <option value="design">Grafik dizayn</option>
             <option value="websites">Web sayt</option>
@@ -218,22 +219,22 @@
           <h3>Sayt sahifalari</h3>
           <ul>
             <li>
-              <a href="#">Bosh sahifa</a>
+              <a href="index.html">Bosh sahifa</a>
             </li>
             <li>
-              <a href="#">Xizmatlar</a>
+              <a href="services.html">Xizmatlar</a>
             </li>
             <li>
-              <a href="#">Portfolio</a>
+              <a href="portfolio.html">Portfolio</a>
             </li>
             <li>
-              <a href="#">Jamoa</a>
+              <a href="team.html">Jamoa</a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a href="blog.html">Blog</a>
             </li>
             <li>
-              <a href="#">Kontaktlar</a>
+              <a href="contacts.html">Kontaktlar</a>
             </li>
           </ul>
         </div>
@@ -241,13 +242,13 @@
           <h3>Biz internetda</h3>
           <ul>
             <li>
-              <a class="telegram icon" href="#">Telegram</a>
+              <a class="telegram icon" href="#" target="_blank">Telegram</a>
             </li>
             <li>
-              <a class="instagram icon" href="#">Instagram</a>
+              <a class="instagram icon" href="#" target="_blank">Instagram</a>
             </li>
             <li>
-              <a class="facebook icon" href="#">Facebook</a>
+              <a class="facebook icon" href="#" target="_blank">Facebook</a>
             </li>
           </ul>
         </div>

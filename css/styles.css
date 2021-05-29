@@ -28,6 +28,7 @@ body {
   margin: 0;
   font-family: var(--font-family);
   background-color: var(--white);
+  color: var(--black);
   padding-top: 56px;
 }
 a{
@@ -90,7 +91,7 @@ header{
   font-size: 15px;
   line-height: 24px;
   color: var(--black);
-  padding: 18px 16px;
+  padding: 18px 24px;
   margin-bottom: -5px;
   display: inline-block;
   transition: border 0.3s ease,
@@ -147,6 +148,7 @@ header{
   width: 100%;
   transition: color 0.2s ease,
   background 0.2s ease;
+  white-space: nowrap;
 }
 .submenu li a:hover{
   color: var(--white);
@@ -224,12 +226,6 @@ header{
   margin-top: 16px;
 }
 
-.services{
-
-}
-.services .container{
-  /* padding */
-}
 .section-text{
   width: 700px;
   margin: 0 auto;
@@ -237,6 +233,7 @@ header{
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--black)!important;
 }
 .section-text h2{
   font-size: 24px;
@@ -250,8 +247,8 @@ header{
   text-align: center;
   font-size: 16px;
   line-height: 24px;
+  color: var(--black)!important;
 }
-
 .services-list{
   display: flex;
   flex-wrap: wrap;
@@ -301,6 +298,7 @@ header{
   margin: 0;
   font-size: 16px;
   line-height: 24px;
+  color: var(--black);
 }
 .links{
   display: flex;
@@ -396,7 +394,7 @@ header{
   padding-top: 1px;
   padding-bottom: 64px;
 }
-.order h2, p{
+.order h2, .order p{
   color: var(--white);
 }
 .order .section-text{
@@ -409,6 +407,7 @@ header{
   background-color: var(--white);
   padding: 24px;
   margin: 24px auto;
+  border-radius: var(--border-radius);
 }
 .order-form input, .order-form select{
   margin-bottom: 16px;
@@ -469,20 +468,39 @@ footer a{
   margin-bottom: 12px!important;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: var(--white);
+  position: relative;
   padding: 2px 0;
+}
+footer a:hover{
+  color: var(--blue);
+}
+footer a:active{
+  color: var(--active-blue);
 }
 .icon{
   padding-left: 25px;
   background-repeat: no-repeat;
   background-size: 20px 20px;
 }
-.telegram{
+.icon:active{
+  opacity: 0.5;
+}
+.icon::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+.telegram::before{
   background-image: url(../images/telegram.svg);
 }
-.instagram{
+.instagram::before{
   background-image: url(../images/instagram.svg);
 }
-.facebook{
+.facebook::before{
   background-image: url(../images/facebook.svg);
 }
