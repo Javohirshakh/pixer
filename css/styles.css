@@ -398,9 +398,6 @@ header{
   padding-top: 1px;
   padding-bottom: 64px;
 }
-.order h2, .order p{
-  color: var(--white);
-}
 .order .section-text{
   margin-top: 55px;
 }
@@ -432,6 +429,9 @@ header{
 }
 .order-form input::placeholder{
   color: var(--black);
+}
+.order h2, .order p{
+  color: var(--white)!important;
 }
 
 
